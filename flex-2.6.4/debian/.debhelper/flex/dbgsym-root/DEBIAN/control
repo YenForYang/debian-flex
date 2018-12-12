@@ -1,0 +1,12 @@
+Package: flex-dbgsym
+Source: flex
+Version: 2.6.4-6.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Manoj Srivastava <srivasta@debian.org>
+Installed-Size: 150
+Depends: flex (= 2.6.4-6.2)
+Section: debug
+Priority: optional
+Description: debug symbols for flex
+Build-Ids: 09db1d1e5db4e75117c55a2a81e9b1834f980dda

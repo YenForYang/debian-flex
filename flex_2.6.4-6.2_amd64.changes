@@ -1,0 +1,55 @@
+Format: 1.8
+Date: Mon, 06 Aug 2018 19:40:25 +0000
+Source: flex
+Binary: flex flex-doc libfl2 libfl-dev
+Built-For-Profiles: nobiarch nocheck
+Architecture: amd64 all
+Version: 2.6.4-6.2
+Distribution: unstable
+Urgency: medium
+Maintainer: Manoj Srivastava <srivasta@debian.org>
+Changed-By: Niels Thykier <niels@thykier.net>
+Description:
+ flex       - fast lexical analyzer generator
+ flex-doc   - Documentation for flex (a fast lexical analyzer generator)
+ libfl-dev  - static library for flex (a fast lexical analyzer generator)
+ libfl2     - SHARED library for flex (a fast lexical analyzer generator)
+Closes: 898725
+Changes:
+ flex (2.6.4-6.2) unstable; urgency=medium
+ .
+   * Non-maintainer upload.
+ .
+   [ Ruben Undheim ]
+   * debian/rules:
+     - Fix build with "dpkg-buildpackage -A" by checking if directory exists
+       first (Closes: #898725)
+ .
+   [ Niels Thykier ]
+   * debian/control:
+     - Set Rules-Requires-Root (R³) to no as flex does not need/require
+       (fake)root during package build.
+Checksums-Sha1:
+ 1f3613cd15af0e184beaee7e85633e005e7e28b0 121220 flex-dbgsym_2.6.4-6.2_amd64.deb
+ efdb08e646dd26c036694ba2bea6d7626c89ceb3 770352 flex-doc_2.6.4-6.2_all.deb
+ 13acf2ffd24dcd93f939977cf10f651336779045 9114 flex_2.6.4-6.2_amd64.buildinfo
+ 9fb2eb3ac10379caab807b22583c7c3d4daaeaec 485760 flex_2.6.4-6.2_amd64.deb
+ 879f1179a5ec775e523c03c8165da40a0704ca1b 114556 libfl-dev_2.6.4-6.2_amd64.deb
+ 04671501c7b08800fab8ef2b7ed4c6297782a995 3932 libfl2-dbgsym_2.6.4-6.2_amd64.deb
+ 2b76cb84b69c7bbfa976f22640de5317b910c681 108476 libfl2_2.6.4-6.2_amd64.deb
+Checksums-Sha256:
+ 3fdb01d009f6534b61217133b9136d936a015d3c6893546f6149e86825b03a6e 121220 flex-dbgsym_2.6.4-6.2_amd64.deb
+ 85d4a2c56ee5b560eb2f7228952dfc669fec30948ac4bd7dcdcdc7eb436ff455 770352 flex-doc_2.6.4-6.2_all.deb
+ d173bee6ee007431e92bacc8e7777e5d1f62eaa254394b257a7c29cc02aaa8a1 9114 flex_2.6.4-6.2_amd64.buildinfo
+ aaaee58ccbdf91a5324db375da6ce2619f039e95fbd0347162181703a097c4f9 485760 flex_2.6.4-6.2_amd64.deb
+ 8f434c5ba639454182c1fdb53ea6d0666b4affaf2b9dd3f80b9b06d04782199f 114556 libfl-dev_2.6.4-6.2_amd64.deb
+ 65855f35273f8b929953cc6cc5e00b52385ff020d360c7a86ee4fcbcea423e06 3932 libfl2-dbgsym_2.6.4-6.2_amd64.deb
+ cd6aad34251aa20d24cf34be02d4e29113e9c726a9c6bdf0a3c38ded6cf3cf6f 108476 libfl2_2.6.4-6.2_amd64.deb
+Files:
+ 3e084d3215c13d7fb12445a6e60b9f64 121220 debug optional flex-dbgsym_2.6.4-6.2_amd64.deb
+ 3079ec83a93145878208009b97ea3f14 770352 doc optional flex-doc_2.6.4-6.2_all.deb
+ cf4ada5730ddc02d63c85d662d43f9b8 9114 devel optional flex_2.6.4-6.2_amd64.buildinfo
+ 28d100f9b774befbe0642b6d4990762c 485760 devel optional flex_2.6.4-6.2_amd64.deb
+ fa72a78d41159d328e7536f76c78566a 114556 libdevel optional libfl-dev_2.6.4-6.2_amd64.deb
+ 41e6873c5f751444c15deb46f6ef2e61 3932 debug optional libfl2-dbgsym_2.6.4-6.2_amd64.deb
+ f7ae89b23e22e9de06134c580ecfe53a 108476 libs optional libfl2_2.6.4-6.2_amd64.deb

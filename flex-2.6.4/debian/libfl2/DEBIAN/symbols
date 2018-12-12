@@ -1,0 +1,6 @@
+libfl.so.2 libfl2 #MINVER#
+ __intel_new_feature_proc_init@Base 2.6.4-6.2
+ get_feature_name@Base 2.6.4-6.2
+ isa_init_once@Base 2.6.4-6.2
+ main@Base 2.5.33
+ yywrap@Base 2.5.33

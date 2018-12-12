@@ -1,0 +1,2157 @@
+ dpkg-buildpackage -D -us -uc -ui -b -Jauto -Pnobiarch,nocheck
+dpkg-buildpackage: info: source package flex
+dpkg-buildpackage: info: source version 2.6.4-6.2
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Niels Thykier <niels@thykier.net>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+I: flex_2.6.4
+dh clean  --with autoreconf
+   dh_clean
+ debian/rules binary
+I: flex_2.6.4
+dh binary  --with autoreconf
+   dh_update_autotools_config
+   dh_autoreconf
+Copying file ABOUT-NLS
+Copying file build-aux/config.rpath
+Copying file m4/codeset.m4
+Copying file m4/extern-inline.m4
+Copying file m4/fcntl-o.m4
+Copying file m4/gettext.m4
+Copying file m4/glibc2.m4
+Copying file m4/glibc21.m4
+Copying file m4/iconv.m4
+Copying file m4/intdiv0.m4
+Copying file m4/intl.m4
+Copying file m4/intldir.m4
+Copying file m4/intlmacosx.m4
+Copying file m4/intmax.m4
+Copying file m4/inttypes-pri.m4
+Copying file m4/inttypes_h.m4
+Copying file m4/lcmessage.m4
+Copying file m4/lib-ld.m4
+Copying file m4/lib-link.m4
+Copying file m4/lock.m4
+Copying file m4/longlong.m4
+Copying file m4/po.m4
+Copying file m4/printf-posix.m4
+Copying file m4/progtest.m4
+Copying file m4/size_max.m4
+Copying file m4/stdint_h.m4
+Copying file m4/threadlib.m4
+Copying file m4/uintmax_t.m4
+Copying file m4/visibility.m4
+Copying file m4/wchar_t.m4
+Copying file m4/wint_t.m4
+Copying file m4/xsize.m4
+Copying file po/Makefile.in.in
+Copying file po/Makevars.template
+Copying file po/Rules-quot
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build-aux'.
+libtoolize: copying file 'build-aux/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+configure.ac:31: installing 'build-aux/compile'
+configure.ac:32: installing 'build-aux/config.guess'
+configure.ac:32: installing 'build-aux/config.sub'
+configure.ac:33: installing 'build-aux/install-sh'
+configure.ac:33: installing 'build-aux/missing'
+doc/Makefile.am:3: installing 'build-aux/mdate-sh'
+doc/Makefile.am:3: installing 'build-aux/texinfo.tex'
+src/Makefile.am: installing 'build-aux/depcomp'
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/home/richard/debs/flex/flex-2.6.4'
+I: flex_2.6.4
+if ! which flex >/dev/null 2>&1; then				   \
+   if [ -e debian/scan.l.md5sum ] &&				   \
+      [ "`md5sum scan.l`" = "`cat debian/scan.l.md5sum`" ]; then   \
+	if [ scan.l -nt scan.c ]; then				   \
+	   echo "scan.l newer than scan.c";			   \
+	fi;							   \
+	touch scan.c;						   \
+   fi;								   \
+fi
+dh_auto_configure -- --prefix= ac_cv_lib_util_getloadavg=no
+	./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-silent-rules --libdir=\${prefix}/lib/x86_64-linux-gnu --libexecdir=\${prefix}/lib/x86_64-linux-gnu --runstatedir=/run --disable-maintainer-mode --disable-dependency-tracking --prefix= ac_cv_lib_util_getloadavg=no
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for gcc... icc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether icc accepts -g... yes
+checking for icc option to accept ISO C89... none needed
+checking whether icc understands -c and -o together... yes
+checking how to run the C preprocessor... icc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by icc... xild
+checking if the linker (xild) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for xild option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from icc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if icc supports -fno-rtti -fno-exceptions... yes
+checking for icc option to produce PIC... -fPIC -DPIC
+checking if icc PIC flag -fPIC -DPIC works... yes
+checking if icc static flag -static works... no
+checking if icc supports -c -o file.o... yes
+checking if icc supports -c -o file.o... (cached) yes
+checking whether the icc linker (xild -m elf_x86_64) supports shared libraries... xild: warning #10013: no objects specified for multi-file optimization
+xild: executing 'ld'
+yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of icc... none
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by icc... xild -m elf_x86_64
+checking if the linker (xild -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for bison... bison -y
+checking for flex... flex
+checking lex output file root... lex.yy
+checking lex library... none needed
+checking whether yytext is a pointer... no
+checking for gcc... (cached) icc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether icc accepts -g... (cached) yes
+checking for icc option to accept ISO C89... (cached) none needed
+checking whether icc understands -c and -o together... (cached) yes
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking how to run the C preprocessor... gcc -E
+checking whether we are using the GNU C++ compiler... yes
+checking whether icpc accepts -g... yes
+checking how to run the C++ preprocessor... icpc -E
+checking for ld used by icpc... xild -m elf_x86_64
+checking if the linker (xild -m elf_x86_64) is GNU ld... yes
+checking whether the icpc linker (xild -m elf_x86_64) supports shared libraries... yes
+checking for icpc option to produce PIC... -fPIC -DPIC
+checking if icpc PIC flag -fPIC -DPIC works... yes
+checking if icpc static flag -static works... no
+checking if icpc supports -c -o file.o... yes
+checking if icpc supports -c -o file.o... (cached) yes
+checking whether the icpc linker (xild -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking dependency style of icpc... none
+checking whether ln -s works... yes
+checking for gawk... (cached) gawk
+checking for help2man... /usr/bin/help2man
+checking for gtexi2dvi... no
+checking for texi2dvi... /usr/bin/texi2dvi
+checking for m4 that supports -P... /usr/bin/m4
+checking for indent... ${top_srcdir}/build-aux/missing indent
+checking if ${top_srcdir}/build-aux/missing indent is GNU indent... no
+configure: WARNING: ${top_srcdir}/build-aux/missing indent does not appear to be GNU indent; 'make indent' may not function properly
+checking regex.h usability... yes
+checking regex.h presence... yes
+checking for regex.h... yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking for unistd.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking for pthread_mutex_lock in -lpthread... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for log10 in -lm... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for pid_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for dup2... yes
+checking for memset... yes
+checking for regcomp... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strtol... yes
+checking for pow... yes
+checking for setlocale... yes
+checking for reallocarr... no
+checking for reallocarray... yes
+./configure: line 20897: nocheck parallel=8: command not found
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating examples/Makefile
+config.status: creating examples/fastwc/Makefile
+config.status: creating examples/manual/Makefile
+config.status: creating po/Makefile.in
+config.status: creating src/libfl.pc
+config.status: creating src/Makefile
+config.status: creating tools/Makefile
+config.status: creating tests/Makefile
+config.status: creating src/config.h
+config.status: executing libtool commands
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+sed -i -e 's/^dist_doc_DATA[[:space:]]*=.*/dist_doc_DATA=/' doc/Makefile
+make[1]: Leaving directory '/home/richard/debs/flex/flex-2.6.4'
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/home/richard/debs/flex/flex-2.6.4'
+I: flex_2.6.4
+dh_auto_build
+	make V=1 -j8
+make[2]: Entering directory '/home/richard/debs/flex/flex-2.6.4'
+Making all in src
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/src'
+make  all-am
+make[4]: Entering directory '/home/richard/debs/flex/flex-2.6.4/src'
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-buf.o `test -f 'buf.c' || echo './'`buf.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-ccl.o `test -f 'ccl.c' || echo './'`ccl.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-dfa.o `test -f 'dfa.c' || echo './'`dfa.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-ecs.o `test -f 'ecs.c' || echo './'`ecs.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-filter.o `test -f 'filter.c' || echo './'`filter.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-gen.o `test -f 'gen.c' || echo './'`gen.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-main.o `test -f 'main.c' || echo './'`main.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-misc.o `test -f 'misc.c' || echo './'`misc.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-nfa.o `test -f 'nfa.c' || echo './'`nfa.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-options.o `test -f 'options.c' || echo './'`options.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-parse.o `test -f 'parse.c' || echo './'`parse.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-regex.o `test -f 'regex.c' || echo './'`regex.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-scanflags.o `test -f 'scanflags.c' || echo './'`scanflags.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-scanopt.o `test -f 'scanopt.c' || echo './'`scanopt.c
+/bin/bash ./mkskel.sh . /usr/bin/m4 2.6.4 > skel.c.tmp
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-sym.o `test -f 'sym.c' || echo './'`sym.c
+mv skel.c.tmp skel.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-tables.o `test -f 'tables.c' || echo './'`tables.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-tables_shared.o `test -f 'tables_shared.c' || echo './'`tables_shared.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-tblcmp.o `test -f 'tblcmp.c' || echo './'`tblcmp.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-yylex.o `test -f 'yylex.c' || echo './'`yylex.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-scan.o `test -f 'scan.c' || echo './'`scan.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-buf.o `test -f 'buf.c' || echo './'`buf.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-ccl.o `test -f 'ccl.c' || echo './'`ccl.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-dfa.o `test -f 'dfa.c' || echo './'`dfa.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-ecs.o `test -f 'ecs.c' || echo './'`ecs.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-filter.o `test -f 'filter.c' || echo './'`filter.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-gen.o `test -f 'gen.c' || echo './'`gen.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-main.o `test -f 'main.c' || echo './'`main.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-misc.o `test -f 'misc.c' || echo './'`misc.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-nfa.o `test -f 'nfa.c' || echo './'`nfa.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-options.o `test -f 'options.c' || echo './'`options.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-parse.o `test -f 'parse.c' || echo './'`parse.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-regex.o `test -f 'regex.c' || echo './'`regex.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-scanflags.o `test -f 'scanflags.c' || echo './'`scanflags.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-scanopt.o `test -f 'scanopt.c' || echo './'`scanopt.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-skel.o `test -f 'skel.c' || echo './'`skel.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-sym.o `test -f 'sym.c' || echo './'`sym.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-tables.o `test -f 'tables.c' || echo './'`tables.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-tables_shared.o `test -f 'tables_shared.c' || echo './'`tables_shared.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-tblcmp.o `test -f 'tblcmp.c' || echo './'`tblcmp.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o stage1flex-yylex.o `test -f 'yylex.c' || echo './'`yylex.c
+/bin/bash ../libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o libmain.lo libmain.c
+/bin/bash ../libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o libyywrap.lo libyywrap.c
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-skel.o `test -f 'skel.c' || echo './'`skel.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c libmain.c  -fPIC -DPIC -o .libs/libmain.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c libyywrap.c  -fPIC -DPIC -o .libs/libyywrap.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c libmain.c -o libmain.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--stats -o stage1flex stage1flex-scan.o stage1flex-buf.o stage1flex-ccl.o stage1flex-dfa.o stage1flex-ecs.o stage1flex-filter.o stage1flex-gen.o stage1flex-main.o stage1flex-misc.o stage1flex-nfa.o stage1flex-options.o stage1flex-parse.o stage1flex-regex.o stage1flex-scanflags.o stage1flex-scanopt.o stage1flex-skel.o stage1flex-sym.o stage1flex-tables.o stage1flex-tables_shared.o stage1flex-tblcmp.o stage1flex-yylex.o    -lm 
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c libyywrap.c -o libyywrap.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -version-info 2:0:0 -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--stats -o libfl.la -rpath /lib/x86_64-linux-gnu libmain.lo libyywrap.lo  -lm 
+libtool: link: icc -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--stats -o stage1flex stage1flex-scan.o stage1flex-buf.o stage1flex-ccl.o stage1flex-dfa.o stage1flex-ecs.o stage1flex-filter.o stage1flex-gen.o stage1flex-main.o stage1flex-misc.o stage1flex-nfa.o stage1flex-options.o stage1flex-parse.o stage1flex-regex.o stage1flex-scanflags.o stage1flex-scanopt.o stage1flex-skel.o stage1flex-sym.o stage1flex-tables.o stage1flex-tables_shared.o stage1flex-tblcmp.o stage1flex-yylex.o  -lm
+icc: warning #10237: -lcilkrts linked in dynamically, static library not available
+libtool: link: icc -shared  -fPIC -DPIC  .libs/libmain.o .libs/libyywrap.o   -lm  -g -O2 -fstack-protector-strong -march=native -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--stats   -Wl,-soname -Wl,libfl.so.2 -o .libs/libfl.so.2.0.0
+icc: warning #10237: -lcilkrts linked in dynamically, static library not available
+ld.gold: initial tasks run time: (user: 0.050000 sys: 0.010000 wall: 0.060000)
+ld.gold: middle tasks run time: (user: 0.000000 sys: 0.000000 wall: 0.010000)
+ld.gold: final tasks run time: (user: 0.010000 sys: 0.000000 wall: 0.000000)
+ld.gold: total run time: (user: 0.060000 sys: 0.010000 wall: 0.070000)
+ld.gold: total space allocated by malloc: 6098944 bytes
+ld.gold: total bytes mapped for read: 162952863
+ld.gold: maximum bytes mapped for read at one time: 162952863
+ld.gold: archive libraries: 19
+ld.gold: total archive members: 35741
+ld.gold: loaded archive members: 5
+ld.gold: lib groups: 0
+ld.gold: total lib groups members: 0
+ld.gold: loaded lib groups members: 0
+ld.gold: output file size: 28984 bytes
+ld.gold: symbol table entries: 20817; buckets: 30727
+ld.gold: symbol table stringpool entries: 10360; buckets: 30727
+ld.gold: symbol table stringpool Stringdata structures: 355
+ld.gold: section name pool entries: 38; buckets: 79
+ld.gold: section name pool Stringdata structures: 1
+ld.gold: output symbol name pool entries: 69; buckets: 89
+ld.gold: output symbol name pool Stringdata structures: 1
+ld.gold: dynamic name pool entries: 40; buckets: 89
+ld.gold: dynamic name pool Stringdata structures: 1
+ld.gold: .comment merged strings input bytes: 58
+ld.gold: .comment merged strings input strings: 2
+ld.gold: .comment merged strings entries: 2; buckets: 3
+ld.gold: .comment merged strings Stringdata structures: 1
+ld.gold: .debug_str merged strings input bytes: 1915
+ld.gold: .debug_str merged strings input strings: 12
+ld.gold: .debug_str merged strings entries: 12; buckets: 17
+ld.gold: .debug_str merged strings Stringdata structures: 3
+ld.gold: .rodata merged strings input bytes: 1948
+ld.gold: .rodata merged strings input strings: 105
+ld.gold: .rodata merged strings entries: 106; buckets: 167
+ld.gold: .rodata merged strings Stringdata structures: 2
+ld.gold: .rodata merged strings input bytes: 1760
+ld.gold: .rodata merged strings input strings: 15
+ld.gold: .rodata merged strings entries: 16; buckets: 17
+ld.gold: .rodata merged strings Stringdata structures: 2
+ld.gold: total free lists: 0
+ld.gold: total free list nodes: 0
+ld.gold: calls to Free_list::remove: 0
+ld.gold: nodes visited: 0
+ld.gold: calls to Free_list::allocate: 0
+ld.gold: nodes visited: 0
+libtool: link: (cd ".libs" && rm -f "libfl.so.2" && ln -s "libfl.so.2.0.0" "libfl.so.2")
+libtool: link: (cd ".libs" && rm -f "libfl.so" && ln -s "libfl.so.2.0.0" "libfl.so")
+libtool: link: xiar cru .libs/libfl.a  libmain.o libyywrap.o
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libfl.a
+libtool: link: ( cd ".libs" && rm -f "libfl.la" && ln -s "../libfl.la" "libfl.la" )
+ld.gold: initial tasks run time: (user: 0.050000 sys: 0.010000 wall: 0.080000)
+ld.gold: middle tasks run time: (user: 0.020000 sys: 0.010000 wall: 0.010000)
+ld.gold: final tasks run time: (user: 0.010000 sys: 0.000000 wall: 0.020000)
+ld.gold: total run time: (user: 0.080000 sys: 0.020000 wall: 0.110000)
+ld.gold: total space allocated by malloc: 7716864 bytes
+ld.gold: total bytes mapped for read: 164792431
+ld.gold: maximum bytes mapped for read at one time: 164792431
+ld.gold: archive libraries: 20
+ld.gold: total archive members: 35755
+ld.gold: loaded archive members: 38
+ld.gold: lib groups: 0
+ld.gold: total lib groups members: 0
+ld.gold: loaded lib groups members: 0
+ld.gold: output file size: 932360 bytes
+ld.gold: symbol table entries: 20892; buckets: 30727
+ld.gold: symbol table stringpool entries: 10435; buckets: 30727
+ld.gold: symbol table stringpool Stringdata structures: 357
+ld.gold: section name pool entries: 40; buckets: 79
+ld.gold: section name pool Stringdata structures: 1
+ld.gold: output symbol name pool entries: 664; buckets: 709
+ld.gold: output symbol name pool Stringdata structures: 7
+ld.gold: dynamic name pool entries: 94; buckets: 709
+ld.gold: dynamic name pool Stringdata structures: 1
+ld.gold: .comment merged strings input bytes: 58
+ld.gold: .comment merged strings input strings: 2
+ld.gold: .comment merged strings entries: 2; buckets: 3
+ld.gold: .comment merged strings Stringdata structures: 1
+ld.gold: .rodata merged strings input bytes: 86232
+ld.gold: .rodata merged strings input strings: 2777
+ld.gold: .rodata merged strings entries: 2686; buckets: 3209
+ld.gold: .rodata merged strings Stringdata structures: 83
+ld.gold: .rodata merged strings input bytes: 41472
+ld.gold: .rodata merged strings input strings: 404
+ld.gold: .rodata merged strings entries: 405; buckets: 709
+ld.gold: .rodata merged strings Stringdata structures: 33
+ld.gold: .debug_str merged strings input bytes: 24062
+ld.gold: .debug_str merged strings input strings: 1094
+ld.gold: .debug_str merged strings entries: 1094; buckets: 1493
+ld.gold: .debug_str merged strings Stringdata structures: 31
+ld.gold: total free lists: 0
+ld.gold: total free list nodes: 0
+ld.gold: calls to Free_list::remove: 0
+ld.gold: nodes visited: 0
+ld.gold: calls to Free_list::allocate: 0
+ld.gold: nodes visited: 0
+./stage1flex   -o stage1scan.c ./scan.l
+icc -DHAVE_CONFIG_H -I.  -DLOCALEDIR=\"/share/locale\" -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -c -o flex-stage1scan.o `test -f 'stage1scan.c' || echo './'`stage1scan.c
+/bin/bash ../libtool  --tag=CC   --mode=link icc   -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--stats -o flex flex-buf.o flex-ccl.o flex-dfa.o flex-ecs.o flex-filter.o flex-gen.o flex-main.o flex-misc.o flex-nfa.o flex-options.o flex-parse.o flex-regex.o flex-scanflags.o flex-scanopt.o flex-skel.o flex-sym.o flex-tables.o flex-tables_shared.o flex-tblcmp.o flex-yylex.o flex-stage1scan.o   -lm 
+libtool: link: icc -g -O2 -fdebug-prefix-map=/home/richard/debs/flex/flex-2.6.4=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--stats -o flex flex-buf.o flex-ccl.o flex-dfa.o flex-ecs.o flex-filter.o flex-gen.o flex-main.o flex-misc.o flex-nfa.o flex-options.o flex-parse.o flex-regex.o flex-scanflags.o flex-scanopt.o flex-skel.o flex-sym.o flex-tables.o flex-tables_shared.o flex-tblcmp.o flex-yylex.o flex-stage1scan.o  -lm
+icc: warning #10237: -lcilkrts linked in dynamically, static library not available
+ld.gold: initial tasks run time: (user: 0.060000 sys: 0.010000 wall: 0.070000)
+ld.gold: middle tasks run time: (user: 0.010000 sys: 0.000000 wall: 0.020000)
+ld.gold: final tasks run time: (user: 0.020000 sys: 0.000000 wall: 0.010000)
+ld.gold: total run time: (user: 0.090000 sys: 0.010000 wall: 0.100000)
+ld.gold: total space allocated by malloc: 7716864 bytes
+ld.gold: total bytes mapped for read: 164794343
+ld.gold: maximum bytes mapped for read at one time: 164794343
+ld.gold: archive libraries: 20
+ld.gold: total archive members: 35755
+ld.gold: loaded archive members: 38
+ld.gold: lib groups: 0
+ld.gold: total lib groups members: 0
+ld.gold: loaded lib groups members: 0
+ld.gold: output file size: 932536 bytes
+ld.gold: symbol table entries: 20892; buckets: 30727
+ld.gold: symbol table stringpool entries: 10435; buckets: 30727
+ld.gold: symbol table stringpool Stringdata structures: 357
+ld.gold: section name pool entries: 40; buckets: 79
+ld.gold: section name pool Stringdata structures: 1
+ld.gold: output symbol name pool entries: 664; buckets: 709
+ld.gold: output symbol name pool Stringdata structures: 7
+ld.gold: dynamic name pool entries: 94; buckets: 709
+ld.gold: dynamic name pool Stringdata structures: 1
+ld.gold: .comment merged strings input bytes: 58
+ld.gold: .comment merged strings input strings: 2
+ld.gold: .comment merged strings entries: 2; buckets: 3
+ld.gold: .comment merged strings Stringdata structures: 1
+ld.gold: .rodata merged strings input bytes: 86272
+ld.gold: .rodata merged strings input strings: 2779
+ld.gold: .rodata merged strings entries: 2686; buckets: 3209
+ld.gold: .rodata merged strings Stringdata structures: 83
+ld.gold: .rodata merged strings input bytes: 41472
+ld.gold: .rodata merged strings input strings: 404
+ld.gold: .rodata merged strings entries: 405; buckets: 709
+ld.gold: .rodata merged strings Stringdata structures: 33
+ld.gold: .debug_str merged strings input bytes: 23936
+ld.gold: .debug_str merged strings input strings: 1093
+ld.gold: .debug_str merged strings entries: 1093; buckets: 1493
+ld.gold: .debug_str merged strings Stringdata structures: 31
+ld.gold: total free lists: 0
+ld.gold: total free list nodes: 0
+ld.gold: calls to Free_list::remove: 0
+ld.gold: nodes visited: 0
+ld.gold: calls to Free_list::allocate: 0
+ld.gold: nodes visited: 0
+make[4]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/src'
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/src'
+Making all in doc
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/doc'
+/usr/bin/help2man --name='the fast lexical analyser generator' --section=1 \
+--source='The Flex Project' --manual='Programming' \
+--output=flex.1 ../src/flex \
+|| rm -f flex.1
+Updating ./version.texi
+restore=: && backupdir=".am$$" && \
+am__cwd=`pwd` && CDPATH="${ZSH_VERSION+.}:" && cd . && \
+rm -rf $backupdir && mkdir $backupdir && \
+if (/bin/bash /home/richard/debs/flex/flex-2.6.4/build-aux/missing makeinfo --version) >/dev/null 2>&1; then \
+  for f in flex.info flex.info-[0-9] flex.info-[0-9][0-9] flex.i[0-9] flex.i[0-9][0-9]; do \
+    if test -f $f; then mv $f $backupdir; restore=mv; else :; fi; \
+  done; \
+else :; fi && \
+cd "$am__cwd"; \
+if /bin/bash /home/richard/debs/flex/flex-2.6.4/build-aux/missing makeinfo   -I . \
+ -o flex.info flex.texi; \
+then \
+  rc=0; \
+  CDPATH="${ZSH_VERSION+.}:" && cd .; \
+else \
+  rc=$?; \
+  CDPATH="${ZSH_VERSION+.}:" && cd . && \
+  $restore $backupdir/* `echo "./flex.info" | sed 's|[^/]*$||'`; \
+fi; \
+rm -rf $backupdir; exit $rc
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/doc'
+Making all in examples
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/examples'
+Making all in manual
+make[4]: Entering directory '/home/richard/debs/flex/flex-2.6.4/examples/manual'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/examples/manual'
+Making all in fastwc
+make[4]: Entering directory '/home/richard/debs/flex/flex-2.6.4/examples/fastwc'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/examples/fastwc'
+make[4]: Entering directory '/home/richard/debs/flex/flex-2.6.4/examples'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/examples'
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/examples'
+Making all in po
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/po'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/po'
+Making all in tests
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/tests'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/tests'
+Making all in tools
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/tools'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/tools'
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4'
+make[2]: Leaving directory '/home/richard/debs/flex/flex-2.6.4'
+/usr/bin/make -C doc flex.html flex.pdf
+make[2]: Entering directory '/home/richard/debs/flex/flex-2.6.4/doc'
+rm -rf flex.htp
+if /bin/bash /home/richard/debs/flex/flex-2.6.4/build-aux/missing makeinfo --html   -I . \
+ -o flex.htp flex.texi; \
+then \
+  rm -rf flex.html && mv flex.htp flex.html; \
+else \
+  rm -rf flex.htp; exit 1; \
+fi
+TEXINPUTS="../build-aux:$TEXINPUTS" \
+MAKEINFO='/bin/bash /home/richard/debs/flex/flex-2.6.4/build-aux/missing makeinfo   -I .' \
+/usr/bin/texi2dvi --pdf --batch  --build-dir=flex.t2p -o flex.pdf  \
+flex.texi
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdfetex)
+ restricted \write18 enabled.
+entering extended mode
+
+(../../../.././flex.texi
+(/home/richard/debs/flex/flex-2.6.4/build-aux/texinfo.tex
+Loading texinfo [version 2018-02-12.17]: pdf, fonts, markup, glyphs,
+page headings, tables, conditionals, indexing, sectioning, toc, environments,
+defuns, macros, cross references, insertions,
+(/usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7.4 <14 February 2011>
+) localization, formatting, and turning on texinfo input format.)
+(/home/richard/debs/flex/flex-2.6.4/doc/version.texi) [1{/var/lib/texmf/fonts/m
+ap/pdftex/updmap/pdftex.map}] [2] [-1] Chapter 1
+Writing index file flex.cp
+Chapter 2 [1] Chapter 3 [2] Chapter 4 [3] [4] Chapter 5 [5] [6]
+Cross reference values unknown; you must run TeX again. [7] Chapter 6 [8]
+[9] [10] [11] [12] Chapter 7 [13]
+Writing index file flex.vr
+Chapter 8 [14] [15] [16] [17] Chapter 9 [18] [19] Chapter 10 [20] [21]
+Writing index file flex.fn
+[22] [23] [24] [25] Chapter 11 [26]
+Writing index file flex.tp
+[27]
+Overfull \hbox (72.42863pt too wide) in paragraph at lines 2136--2136
+ [][][][][] |
+[28] [29] Chapter 12 [30] Chapter 13 [31]
+Writing index file flex.hk
+Chapter 14 [32] Chapter 15 [33] Chapter 16 [34]
+Writing index file flex.op
+[35] [36] [37] [38] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 3051--3058
+ @textrm It in-forms @texttt flex[] @textrm that you have de-rived @texttt NAME
+[] @textrm as a sub-class of
+[40] [41] [42] [43] Chapter 17 [44] [45] [46] [47] [48] Chapter 18 [49]
+[50] [51] [52] Chapter 19 [53] [54] [55]
+Overfull \hbox (78.17732pt too wide) in paragraph at lines 4222--4222
+ [][] |
+[56] [57]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 4355--4355
+ [][] |
+[58] [59] Chapter 20 [60] [61] [62] Chapter 21 [63] [64] [65] Chapter 22
+[66] [67] [68] [69] [70] Chapter 23 [71]
+Underfull \hbox (badness 10000) in paragraph at lines 5270--5280
+ []@texttt reject_used_but_not_detected undefined[] @textrm or @texttt yymore_u
+sed_but_not_detected
+
+Underfull \hbox (badness 10000) in paragraph at lines 5308--5313
+ []@textrm `@texttt input buffer overflow, can't enlarge buffer because scanner
+ uses REJECT[]@textrm '[].
+Chapter 24 [72] [73] Chapter 25 [74] (FAQ) [75] [76] [77] [78] [79] [80]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 5904--5904
+ [][] |
+[81] [82] [83]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6074--6074
+ [][][] |
+[84]
+Overfull \hbox (129.91551pt too wide) in paragraph at lines 6140--6140
+ [][] |
+[85]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6240--6240
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6240--6240
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+[86]
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (55.18257pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+[87]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6371--6371
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6371--6371
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6371--6371
+ [][] |
+[88]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6437--6437
+ [][] |
+[89]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6437--6437
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+[90]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6565--6565
+ [][] |
+[91]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6591--6591
+ [][] |
+[92]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6628--6628
+ [][] |
+[93]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6700--6700
+ [][] |
+[94]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6726--6726
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+[95]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6785--6785
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6822--6822
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6822--6822
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6822--6822
+ [][] |
+[96]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6855--6855
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6855--6855
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6855--6855
+ [][] |
+[97]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6920--6920
+ [][] |
+
+Overfull \hbox (49.43388pt too wide) in paragraph at lines 6920--6920
+ [][] |
+[98]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6983--6983
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6983--6983
+ [][] |
+[99]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 7010--7010
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7010--7010
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7041--7041
+ [][] |
+[100]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7095--7095
+ [][] |
+[101]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7118--7118
+ [][] |
+[102]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7235--7235
+ [][] |
+[103]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7264--7264
+ [][] |
+[104]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7349--7349
+ [][] |
+[105]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7382--7382
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7382--7382
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7430--7430
+ [][] |
+[106]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+[107]
+Overfull \hbox (101.17207pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7518--7518
+ [][][] |
+
+Overfull \hbox (423.09859pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (1779.7889pt too wide) in paragraph at lines 7518--7518
+ [][] |
+[108]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7547--7547
+ [][] |
+[109]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7594--7594
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7621--7621
+ [][] |
+[110] [111]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7688--7688
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7688--7688
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7709--7709
+ [][] |
+[112]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7773--7773
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7842--7842
+ [][] |
+
+Overfull \hbox (60.93126pt too wide) in paragraph at lines 7842--7842
+ [][] |
+[113] [114]
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7887--7887
+ [][] |
+[115] [116]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 8015--8015
+ [][] |
+
+Overfull \hbox (49.43388pt too wide) in paragraph at lines 8015--8015
+ [][] |
+[117]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 8015--8015
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 8068--8068
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 8068--8068
+ [][] |
+[118]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 8091--8091
+ [][] |
+[119] Appendix A [120] [121] [122] [123]
+Overfull \hbox (15.10698pt too wide) in paragraph at lines 8454--8454
+ [][] |
+
+Overfull \hbox (95.58861pt too wide) in paragraph at lines 8454--8454
+ [][] |
+[124]
+Overfull \hbox (934.89702pt too wide) in paragraph at lines 8479--8479
+ [][] |
+
+Overfull \hbox (337.0335pt too wide) in paragraph at lines 8488--8489
+ []@texttt L?\"([^\"\\\n]|(\\['\"?\\abfnrtv])|(\\([0123456]{1,3}))|(\\x[[:xdigi
+t:]]+)|(\\u([[:xdigit:]]{4}))|(\\U([[:xdigit:]]{8})))*\"[] |
+[125] (Indices) [126]
+No file flex.cps.
+No file flex.fns.
+No file flex.vrs.
+No file flex.tps.
+No file flex.hks.
+No file flex.ops.
+[127] )
+(see the transcript file for additional information)pdfTeX warning (\pdffontatt
+r): fonts @textsl and @defsl have conflicting attributes; I will ignore the att
+ributes assigned to @textsl
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsltt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on flex.pdf (130 pages, 450922 bytes).
+Transcript written on flex.log.
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdfetex)
+ restricted \write18 enabled.
+entering extended mode
+
+(../../../.././flex.texi
+(/home/richard/debs/flex/flex-2.6.4/build-aux/texinfo.tex
+Loading texinfo [version 2018-02-12.17]: pdf, fonts, markup, glyphs,
+page headings, tables, conditionals, indexing, sectioning, toc, environments,
+defuns, macros, cross references, insertions,
+(/usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7.4 <14 February 2011>
+) localization, formatting, and turning on texinfo input format.)
+(/home/richard/debs/flex/flex-2.6.4/doc/version.texi) [1{/var/lib/texmf/fonts/m
+ap/pdftex/updmap/pdftex.map}] [2] (./flex.toc [-1] [-2] [-3] [-4]) [-5]
+(./flex.toc) (./flex.toc) Chapter 1 (./flex.aux)
+Writing index file flex.cp
+Chapter 2 [1] Chapter 3 [2] Chapter 4 [3] [4] Chapter 5 [5] [6] [7] Chapter 6
+[8] [9] [10] [11] [12] Chapter 7 [13]
+Writing index file flex.vr
+Chapter 8 [14] [15] [16] [17] Chapter 9 [18] [19] Chapter 10 [20] [21]
+Writing index file flex.fn
+[22] [23] [24] [25] Chapter 11 [26]
+Writing index file flex.tp
+[27]
+Overfull \hbox (72.42863pt too wide) in paragraph at lines 2136--2136
+ [][][][][] |
+[28] [29] Chapter 12 [30] Chapter 13 [31]
+Writing index file flex.hk
+Chapter 14 [32] Chapter 15 [33] Chapter 16 [34]
+Writing index file flex.op
+[35] [36] [37] [38] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 3051--3058
+ @textrm It in-forms @texttt flex[] @textrm that you have de-rived @texttt NAME
+[] @textrm as a sub-class of
+[40] [41] [42] [43] Chapter 17 [44] [45] [46] [47] [48] Chapter 18 [49]
+[50] [51] [52] Chapter 19 [53] [54] [55]
+Overfull \hbox (78.17732pt too wide) in paragraph at lines 4222--4222
+ [][] |
+[56] [57]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 4355--4355
+ [][] |
+[58] [59] Chapter 20 [60] [61] [62] Chapter 21 [63] [64] [65] Chapter 22
+[66] [67] [68] [69] [70] Chapter 23 [71]
+Underfull \hbox (badness 10000) in paragraph at lines 5270--5280
+ []@texttt reject_used_but_not_detected undefined[] @textrm or @texttt yymore_u
+sed_but_not_detected
+
+Underfull \hbox (badness 10000) in paragraph at lines 5308--5313
+ []@textrm `@texttt input buffer overflow, can't enlarge buffer because scanner
+ uses REJECT[]@textrm '[].
+Chapter 24 [72] [73] Chapter 25 [74] (FAQ) [75] [76] [77] [78] [79] [80]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 5904--5904
+ [][] |
+[81] [82] [83]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6074--6074
+ [][][] |
+[84]
+Overfull \hbox (129.91551pt too wide) in paragraph at lines 6140--6140
+ [][] |
+[85]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6240--6240
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6240--6240
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+[86]
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (55.18257pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+[87]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6371--6371
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6371--6371
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6371--6371
+ [][] |
+[88]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6437--6437
+ [][] |
+[89]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6437--6437
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+[90]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6565--6565
+ [][] |
+[91]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6591--6591
+ [][] |
+[92]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6628--6628
+ [][] |
+[93]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6700--6700
+ [][] |
+[94]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6726--6726
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+[95]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6785--6785
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6822--6822
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6822--6822
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6822--6822
+ [][] |
+[96]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6855--6855
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6855--6855
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6855--6855
+ [][] |
+[97]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6920--6920
+ [][] |
+
+Overfull \hbox (49.43388pt too wide) in paragraph at lines 6920--6920
+ [][] |
+[98]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6983--6983
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6983--6983
+ [][] |
+[99]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 7010--7010
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7010--7010
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7041--7041
+ [][] |
+[100]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7095--7095
+ [][] |
+[101]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7118--7118
+ [][] |
+[102]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7235--7235
+ [][] |
+[103]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7264--7264
+ [][] |
+[104]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7349--7349
+ [][] |
+[105]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7382--7382
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7382--7382
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7430--7430
+ [][] |
+[106]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+[107]
+Overfull \hbox (101.17207pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7518--7518
+ [][][] |
+
+Overfull \hbox (423.09859pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (1779.7889pt too wide) in paragraph at lines 7518--7518
+ [][] |
+[108]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7547--7547
+ [][] |
+[109]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7594--7594
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7621--7621
+ [][] |
+[110] [111]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7688--7688
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7688--7688
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7709--7709
+ [][] |
+[112]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7773--7773
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7842--7842
+ [][] |
+
+Overfull \hbox (60.93126pt too wide) in paragraph at lines 7842--7842
+ [][] |
+[113] [114]
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7887--7887
+ [][] |
+[115] [116]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 8015--8015
+ [][] |
+
+Overfull \hbox (49.43388pt too wide) in paragraph at lines 8015--8015
+ [][] |
+[117]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 8015--8015
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 8068--8068
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 8068--8068
+ [][] |
+[118]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 8091--8091
+ [][] |
+[119] Appendix A [120] [121] [122] [123]
+Overfull \hbox (15.10698pt too wide) in paragraph at lines 8454--8454
+ [][] |
+
+Overfull \hbox (95.58861pt too wide) in paragraph at lines 8454--8454
+ [][] |
+[124]
+Overfull \hbox (934.89702pt too wide) in paragraph at lines 8479--8479
+ [][] |
+
+Overfull \hbox (337.0335pt too wide) in paragraph at lines 8488--8489
+ []@texttt L?\"([^\"\\\n]|(\\['\"?\\abfnrtv])|(\\([0123456]{1,3}))|(\\x[[:xdigi
+t:]]+)|(\\u([[:xdigit:]]{4}))|(\\U([[:xdigit:]]{8})))*\"[] |
+[125] (Indices) [126] [127] [128] [129] [130] [131] [132] [133] )
+(see the transcript file for additional information)pdfTeX warning (\pdffontatt
+r): fonts @textsl and @defsl have conflicting attributes; I will ignore the att
+ributes assigned to @textsl
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsltt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+s10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on flex.pdf (140 pages, 557362 bytes).
+Transcript written on flex.log.
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdfetex)
+ restricted \write18 enabled.
+entering extended mode
+
+(../../../.././flex.texi
+(/home/richard/debs/flex/flex-2.6.4/build-aux/texinfo.tex
+Loading texinfo [version 2018-02-12.17]: pdf, fonts, markup, glyphs,
+page headings, tables, conditionals, indexing, sectioning, toc, environments,
+defuns, macros, cross references, insertions,
+(/usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7.4 <14 February 2011>
+) localization, formatting, and turning on texinfo input format.)
+(/home/richard/debs/flex/flex-2.6.4/doc/version.texi) [1{/var/lib/texmf/fonts/m
+ap/pdftex/updmap/pdftex.map}] [2] (./flex.toc [-1] [-2] [-3] [-4]) [-5]
+(./flex.toc) (./flex.toc) Chapter 1 (./flex.aux)
+Writing index file flex.cp
+Chapter 2 [1] Chapter 3 [2] Chapter 4 [3] [4] Chapter 5 [5] [6] [7] Chapter 6
+[8] [9] [10] [11] [12] Chapter 7 [13]
+Writing index file flex.vr
+Chapter 8 [14] [15] [16] [17] Chapter 9 [18] [19] Chapter 10 [20] [21]
+Writing index file flex.fn
+[22] [23] [24] [25] Chapter 11 [26]
+Writing index file flex.tp
+[27]
+Overfull \hbox (72.42863pt too wide) in paragraph at lines 2136--2136
+ [][][][][] |
+[28] [29] Chapter 12 [30] Chapter 13 [31]
+Writing index file flex.hk
+Chapter 14 [32] Chapter 15 [33] Chapter 16 [34]
+Writing index file flex.op
+[35] [36] [37] [38] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 3051--3058
+ @textrm It in-forms @texttt flex[] @textrm that you have de-rived @texttt NAME
+[] @textrm as a sub-class of
+[40] [41] [42] [43] Chapter 17 [44] [45] [46] [47] [48] Chapter 18 [49]
+[50] [51] [52] Chapter 19 [53] [54] [55]
+Overfull \hbox (78.17732pt too wide) in paragraph at lines 4222--4222
+ [][] |
+[56] [57]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 4355--4355
+ [][] |
+[58] [59] Chapter 20 [60] [61] [62] Chapter 21 [63] [64] [65] Chapter 22
+[66] [67] [68] [69] [70] Chapter 23 [71]
+Underfull \hbox (badness 10000) in paragraph at lines 5270--5280
+ []@texttt reject_used_but_not_detected undefined[] @textrm or @texttt yymore_u
+sed_but_not_detected
+
+Underfull \hbox (badness 10000) in paragraph at lines 5308--5313
+ []@textrm `@texttt input buffer overflow, can't enlarge buffer because scanner
+ uses REJECT[]@textrm '[].
+Chapter 24 [72] [73] Chapter 25 [74] (FAQ) [75] [76] [77] [78] [79] [80]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 5904--5904
+ [][] |
+[81] [82] [83]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6074--6074
+ [][][] |
+[84]
+Overfull \hbox (129.91551pt too wide) in paragraph at lines 6140--6140
+ [][] |
+[85]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6240--6240
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6240--6240
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+[86]
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (55.18257pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+[87]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6371--6371
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6371--6371
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6371--6371
+ [][] |
+[88]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6437--6437
+ [][] |
+[89]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6437--6437
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+[90]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6565--6565
+ [][] |
+[91]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6591--6591
+ [][] |
+[92]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6628--6628
+ [][] |
+[93]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6700--6700
+ [][] |
+[94]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6726--6726
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+[95]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6785--6785
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6822--6822
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6822--6822
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6822--6822
+ [][] |
+[96]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6855--6855
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6855--6855
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6855--6855
+ [][] |
+[97]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6920--6920
+ [][] |
+
+Overfull \hbox (49.43388pt too wide) in paragraph at lines 6920--6920
+ [][] |
+[98]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6983--6983
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6983--6983
+ [][] |
+[99]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 7010--7010
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7010--7010
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7041--7041
+ [][] |
+[100]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7095--7095
+ [][] |
+[101]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7118--7118
+ [][] |
+[102]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7235--7235
+ [][] |
+[103]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7264--7264
+ [][] |
+[104]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7349--7349
+ [][] |
+[105]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7382--7382
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7382--7382
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7430--7430
+ [][] |
+[106]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+[107]
+Overfull \hbox (101.17207pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7518--7518
+ [][][] |
+
+Overfull \hbox (423.09859pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (1779.7889pt too wide) in paragraph at lines 7518--7518
+ [][] |
+[108]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7547--7547
+ [][] |
+[109]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7594--7594
+ [][] |
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7621--7621
+ [][] |
+[110] [111]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7688--7688
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7688--7688
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7709--7709
+ [][] |
+[112]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7773--7773
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7842--7842
+ [][] |
+
+Overfull \hbox (60.93126pt too wide) in paragraph at lines 7842--7842
+ [][] |
+[113] [114]
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7887--7887
+ [][] |
+[115] [116]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 8015--8015
+ [][] |
+
+Overfull \hbox (49.43388pt too wide) in paragraph at lines 8015--8015
+ [][] |
+[117]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 8015--8015
+ [][] |
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 8068--8068
+ [][] |
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 8068--8068
+ [][] |
+[118]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 8091--8091
+ [][] |
+[119] Appendix A [120] [121] [122] [123]
+Overfull \hbox (15.10698pt too wide) in paragraph at lines 8454--8454
+ [][] |
+
+Overfull \hbox (95.58861pt too wide) in paragraph at lines 8454--8454
+ [][] |
+[124]
+Overfull \hbox (934.89702pt too wide) in paragraph at lines 8479--8479
+ [][] |
+
+Overfull \hbox (337.0335pt too wide) in paragraph at lines 8488--8489
+ []@texttt L?\"([^\"\\\n]|(\\['\"?\\abfnrtv])|(\\([0123456]{1,3}))|(\\x[[:xdigi
+t:]]+)|(\\u([[:xdigit:]]{4}))|(\\U([[:xdigit:]]{8})))*\"[] |
+[125] (Indices) [126] [127] [128] [129] [130] [131] [132] [133] )
+(see the transcript file for additional information)pdfTeX warning (\pdffontatt
+r): fonts @textsl and @defsl have conflicting attributes; I will ignore the att
+ributes assigned to @textsl
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsltt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+s10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on flex.pdf (140 pages, 557361 bytes).
+Transcript written on flex.log.
+make[2]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/doc'
+bash -n debian/flex-doc.postinst
+bash -n debian/flex-doc.prerm
+bash -n debian/flex.postinst
+bash -n debian/flex.prerm
+make[1]: Leaving directory '/home/richard/debs/flex/flex-2.6.4'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+   dh_testroot
+   dh_prep
+   dh_auto_install
+	make V=1 -j1 install DESTDIR=/home/richard/debs/flex/flex-2.6.4/debian/tmp AM_UPDATE_INFO_DIR=no
+make[1]: Entering directory '/home/richard/debs/flex/flex-2.6.4'
+Making install in src
+make[2]: Entering directory '/home/richard/debs/flex/flex-2.6.4/src'
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/src'
+ /bin/mkdir -p '/home/richard/debs/flex/flex-2.6.4/debian/tmp/lib/x86_64-linux-gnu'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libfl.la '/home/richard/debs/flex/flex-2.6.4/debian/tmp/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/libfl.so.2.0.0 /home/richard/debs/flex/flex-2.6.4/debian/tmp/lib/x86_64-linux-gnu/libfl.so.2.0.0
+libtool: install: (cd /home/richard/debs/flex/flex-2.6.4/debian/tmp/lib/x86_64-linux-gnu && { ln -s -f libfl.so.2.0.0 libfl.so.2 || { rm -f libfl.so.2 && ln -s libfl.so.2.0.0 libfl.so.2; }; })
+libtool: install: (cd /home/richard/debs/flex/flex-2.6.4/debian/tmp/lib/x86_64-linux-gnu && { ln -s -f libfl.so.2.0.0 libfl.so || { rm -f libfl.so && ln -s libfl.so.2.0.0 libfl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfl.lai /home/richard/debs/flex/flex-2.6.4/debian/tmp/lib/x86_64-linux-gnu/libfl.la
+libtool: install: /usr/bin/install -c .libs/libfl.a /home/richard/debs/flex/flex-2.6.4/debian/tmp/lib/x86_64-linux-gnu/libfl.a
+libtool: install: chmod 644 /home/richard/debs/flex/flex-2.6.4/debian/tmp/lib/x86_64-linux-gnu/libfl.a
+libtool: install: ranlib /home/richard/debs/flex/flex-2.6.4/debian/tmp/lib/x86_64-linux-gnu/libfl.a
+libtool: warning: remember to run 'libtool --finish /lib/x86_64-linux-gnu'
+ /bin/mkdir -p '/home/richard/debs/flex/flex-2.6.4/debian/tmp/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c flex '/home/richard/debs/flex/flex-2.6.4/debian/tmp/bin'
+libtool: install: /usr/bin/install -c flex /home/richard/debs/flex/flex-2.6.4/debian/tmp/bin/flex
+ /bin/mkdir -p '/home/richard/debs/flex/flex-2.6.4/debian/tmp/include'
+ /usr/bin/install -c -m 644 FlexLexer.h '/home/richard/debs/flex/flex-2.6.4/debian/tmp/include'
+ /bin/mkdir -p '/home/richard/debs/flex/flex-2.6.4/debian/tmp/lib/x86_64-linux-gnu/pkgconfig'
+ /usr/bin/install -c -m 644 libfl.pc '/home/richard/debs/flex/flex-2.6.4/debian/tmp/lib/x86_64-linux-gnu/pkgconfig'
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/src'
+make[2]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/src'
+Making install in doc
+make[2]: Entering directory '/home/richard/debs/flex/flex-2.6.4/doc'
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/richard/debs/flex/flex-2.6.4/debian/tmp/share/info'
+ /usr/bin/install -c -m 644 ./flex.info ./flex.info-1 ./flex.info-2 '/home/richard/debs/flex/flex-2.6.4/debian/tmp/share/info'
+ /bin/mkdir -p '/home/richard/debs/flex/flex-2.6.4/debian/tmp/share/man/man1'
+ /usr/bin/install -c -m 644 flex.1 '/home/richard/debs/flex/flex-2.6.4/debian/tmp/share/man/man1'
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/doc'
+make[2]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/doc'
+Making install in examples
+make[2]: Entering directory '/home/richard/debs/flex/flex-2.6.4/examples'
+Making install in manual
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/examples/manual'
+make[4]: Entering directory '/home/richard/debs/flex/flex-2.6.4/examples/manual'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/examples/manual'
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/examples/manual'
+Making install in fastwc
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/examples/fastwc'
+make[4]: Entering directory '/home/richard/debs/flex/flex-2.6.4/examples/fastwc'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/examples/fastwc'
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/examples/fastwc'
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/examples'
+make[4]: Entering directory '/home/richard/debs/flex/flex-2.6.4/examples'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/examples'
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/examples'
+make[2]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/examples'
+Making install in po
+make[2]: Entering directory '/home/richard/debs/flex/flex-2.6.4/po'
+installing ca.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/ca/LC_MESSAGES/flex.mo
+installing da.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/da/LC_MESSAGES/flex.mo
+installing de.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/de/LC_MESSAGES/flex.mo
+installing en@boldquot.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/en@boldquot/LC_MESSAGES/flex.mo
+installing en@quot.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/en@quot/LC_MESSAGES/flex.mo
+installing eo.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/eo/LC_MESSAGES/flex.mo
+installing es.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/es/LC_MESSAGES/flex.mo
+installing fi.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/fi/LC_MESSAGES/flex.mo
+installing fr.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/fr/LC_MESSAGES/flex.mo
+installing ga.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/ga/LC_MESSAGES/flex.mo
+installing hr.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/hr/LC_MESSAGES/flex.mo
+installing ko.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/ko/LC_MESSAGES/flex.mo
+installing nl.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/nl/LC_MESSAGES/flex.mo
+installing pl.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/pl/LC_MESSAGES/flex.mo
+installing pt_BR.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/pt_BR/LC_MESSAGES/flex.mo
+installing ro.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/ro/LC_MESSAGES/flex.mo
+installing ru.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/ru/LC_MESSAGES/flex.mo
+installing sr.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/sr/LC_MESSAGES/flex.mo
+installing sv.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/sv/LC_MESSAGES/flex.mo
+installing tr.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/tr/LC_MESSAGES/flex.mo
+/usr/bin/install: cannot stat './uk.gmo': No such file or directory
+installing ./uk.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/uk/LC_MESSAGES/flex.mo
+installing vi.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/vi/LC_MESSAGES/flex.mo
+installing zh_CN.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/zh_CN/LC_MESSAGES/flex.mo
+installing zh_TW.gmo as /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/locale/zh_TW/LC_MESSAGES/flex.mo
+if test "flex" = "gettext-tools"; then \
+  /bin/mkdir -p /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/richard/debs/flex/flex-2.6.4/debian/tmp/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/po'
+Making install in tests
+make[2]: Entering directory '/home/richard/debs/flex/flex-2.6.4/tests'
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/tests'
+make[2]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/tests'
+Making install in tools
+make[2]: Entering directory '/home/richard/debs/flex/flex-2.6.4/tools'
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4/tools'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/tools'
+make[2]: Leaving directory '/home/richard/debs/flex/flex-2.6.4/tools'
+make[2]: Entering directory '/home/richard/debs/flex/flex-2.6.4'
+make[3]: Entering directory '/home/richard/debs/flex/flex-2.6.4'
+make  install-exec-hook
+make[4]: Entering directory '/home/richard/debs/flex/flex-2.6.4'
+cd /home/richard/debs/flex/flex-2.6.4/debian/tmp/bin && \
+	ln -s -f flex flex++
+make[4]: Leaving directory '/home/richard/debs/flex/flex-2.6.4'
+ /bin/mkdir -p '/home/richard/debs/flex/flex-2.6.4/debian/tmp/share/doc/flex'
+ /usr/bin/install -c -m 644 AUTHORS COPYING NEWS ONEWS README.md '/home/richard/debs/flex/flex-2.6.4/debian/tmp/share/doc/flex'
+make[3]: Leaving directory '/home/richard/debs/flex/flex-2.6.4'
+make[2]: Leaving directory '/home/richard/debs/flex/flex-2.6.4'
+make[1]: Leaving directory '/home/richard/debs/flex/flex-2.6.4'
+   debian/rules override_dh_install
+make[1]: Entering directory '/home/richard/debs/flex/flex-2.6.4'
+I: flex_2.6.4
+test ! -d debian/tmp/lib/x86_64-linux-gnu ||                \
+            find debian/tmp/lib/x86_64-linux-gnu -type f            \
+               -name \*.la -exec rm {} \;
+dh_install
+test ! -f debian/libfl2/usr/lib/x86_64-linux-gnu/libfl.so    || \
+            rm -f debian/libfl2/usr/lib/x86_64-linux-gnu/libfl.so
+test ! -f debian/libfl2/usr/lib/x86_64-linux-gnu/libfl.a    || \
+            rm -f debian/libfl2/usr/lib/x86_64-linux-gnu/libfl.a
+test ! -d debian/libfl2/usr/lib/x86_64-linux-gnu/pkgconfig  || \
+            rm -rf debian/libfl2/usr/lib/x86_64-linux-gnu/pkgconfig
+test ! -d debian/libfl-dev/usr/lib/x86_64-linux-gnu         || \
+            find debian/libfl-dev/usr/lib/x86_64-linux-gnu             \
+               -name libfl.so.\* -exec rm {} \;
+test ! -f debian/libfl-dev/usr/lib/x86_64-linux-gnu/libfl.a || \
+            ln -s libfl.a                                                   \
+                  debian/libfl-dev/usr/lib/x86_64-linux-gnu/libl.a
+rm -f debian/flex/usr/share/doc/flex/flex.pdf
+test ! -f debian/flex/usr/share/doc/flex/COPYING ||              \
+            rm -f debian/flex/usr/share/doc/flex/COPYING
+if [ -d debian/flex/usr/share/locale ] ; then \
+  find debian/flex/usr/share/locale  -type d -empty -delete ; \
+fi
+dh_link
+make[1]: Leaving directory '/home/richard/debs/flex/flex-2.6.4'
+   debian/rules override_dh_installdocs
+make[1]: Entering directory '/home/richard/debs/flex/flex-2.6.4'
+I: flex_2.6.4
+dh_installdocs
+mv debian/flex-doc/usr/share/doc/flex/flex.html/    \
+           debian/flex-doc/usr/share/doc/flex-doc/html
+mv debian/flex-doc/usr/share/doc/flex/flex.pdf      \
+           debian/flex-doc/usr/share/doc/flex-doc/
+mv debian/flex-doc/usr/share/doc/flex/README.md     \
+           debian/flex-doc/usr/share/doc/flex-doc/
+make[1]: Leaving directory '/home/richard/debs/flex/flex-2.6.4'
+   dh_installchangelogs
+   dh_installexamples
+   dh_installman
+   dh_installinfo
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+	Normalized debian/flex/usr/share/locale/da/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/nl/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/ko/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/hr/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/ru/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/zh_TW/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/ro/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/fi/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/de/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/es/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/en@boldquot/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/fr/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/pl/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/sr/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/pt_BR/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/tr/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/sv/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/en@quot/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/ca/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/zh_CN/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/vi/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/ga/LC_MESSAGES/flex.mo
+	Normalized debian/flex/usr/share/locale/eo/LC_MESSAGES/flex.mo
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_strip
+   dh_makeshlibs
+dpkg-gensymbols: warning: some new symbols appeared in the symbols file: see diff output below
+dpkg-gensymbols: warning: debian/libfl2/DEBIAN/symbols doesn't match completely debian/libfl2.symbols
+--- debian/libfl2.symbols (libfl2_2.6.4-6.2_amd64)
++++ dpkg-gensymbolsvM7ZNA	2018-12-03 23:36:43.391657109 +0100
+@@ -1,3 +1,6 @@
+ libfl.so.2 libfl2 #MINVER#
++ __intel_new_feature_proc_init@Base 2.6.4-6.2
++ get_feature_name@Base 2.6.4-6.2
++ isa_init_once@Base 2.6.4-6.2
+  main@Base 2.5.33
+  yywrap@Base 2.5.33
+   dh_shlibdeps
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libiomp5.so'
+dpkg-shlibdeps: warning: symbol yylex used by debian/libfl2/usr/lib/x86_64-linux-gnu/libfl.so.2.0.0 found in none of the libraries
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libfl2/usr/lib/x86_64-linux-gnu/libfl.so.2.0.0 was not linked against libdl.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libfl2/usr/lib/x86_64-linux-gnu/libfl.so.2.0.0 was not linked against libpthread.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libfl2/usr/lib/x86_64-linux-gnu/libfl.so.2.0.0 was not linked against libgcc_s.so.1 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/flex/usr/bin/flex was not linked against libdl.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/flex/usr/bin/flex was not linked against libgcc_s.so.1 (it uses none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'flex' in '../flex_2.6.4-6.2_amd64.deb'.
+dpkg-deb: building package 'flex-dbgsym' in '../flex-dbgsym_2.6.4-6.2_amd64.deb'.
+dpkg-deb: building package 'flex-doc' in '../flex-doc_2.6.4-6.2_all.deb'.
+dpkg-deb: building package 'libfl2' in '../libfl2_2.6.4-6.2_amd64.deb'.
+dpkg-deb: building package 'libfl2-dbgsym' in '../libfl2-dbgsym_2.6.4-6.2_amd64.deb'.
+dpkg-deb: building package 'libfl-dev' in '../libfl-dev_2.6.4-6.2_amd64.deb'.
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../flex_2.6.4-6.2_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian flex_2.6.4-6.2_amd64.changes ...
+E: libfl2: symbols-file-contains-current-version-with-debian-revision on symbol __intel_new_feature_proc_init@Base and 2 others
+W: flex: hardening-no-pie usr/bin/flex
+Finished running lintian.

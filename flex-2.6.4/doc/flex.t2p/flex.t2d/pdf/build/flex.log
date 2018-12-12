@@ -1,0 +1,2538 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdfetex 2018.12.2)  3 DEC 2018 23:36
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\nonstopmode \input ../../../.././flex.texi
+(../../../.././flex.texi
+(/home/richard/debs/flex/flex-2.6.4/build-aux/texinfo.tex
+Loading texinfo [version 2018-02-12.17]:
+\outerhsize=\dimen16
+\outervsize=\dimen17
+\cornerlong=\dimen18
+\cornerthick=\dimen19
+\topandbottommargin=\dimen20
+\bindingoffset=\dimen21
+\normaloffset=\dimen22
+\txipagewidth=\dimen23
+\txipageheight=\dimen24
+\headlinebox=\box16
+\footlinebox=\box17
+\margin=\insert252
+\EMsimple=\toks13
+\groupbox=\box18
+\groupinvalidhelp=\toks14
+\mil=\dimen25
+\exdentamount=\skip18
+\inmarginspacing=\skip19
+\centerpenalty=\count27
+ pdf,
+\tempnum=\count28
+\lnkcount=\count29
+\filename=\toks15
+\filenamelength=\count30
+\pgn=\count31
+\toksA=\toks16
+\toksB=\toks17
+\toksC=\toks18
+\toksD=\toks19
+\boxA=\box19
+\boxB=\box20
+\countA=\count32
+\nopdfimagehelp=\toks20
+ fonts,
+\textleading=\dimen26
+\sffam=\fam8
+ markup,
+\fontdepth=\count33
+ glyphs,
+\errorbox=\box21
+
+page headings,
+\titlepagetopglue=\skip20
+\titlepagebottomglue=\skip21
+\evenheadline=\toks21
+\oddheadline=\toks22
+\evenfootline=\toks23
+\oddfootline=\toks24
+ tables,
+\tableindent=\dimen27
+\itemindent=\dimen28
+\itemmargin=\dimen29
+\itemmax=\dimen30
+\itemno=\count34
+\multitableparskip=\skip22
+\multitableparindent=\skip23
+\multitablecolspace=\dimen31
+\multitablelinespace=\skip24
+\colcount=\count35
+\everytab=\toks25
+ conditionals,
+\doignorecount=\count36
+ indexing,
+\dummybox=\box22
+\whatsitskip=\skip25
+\whatsitpenalty=\count37
+\entryrightmargin=\dimen32
+\thinshrinkable=\skip26
+\entrybox=\box23
+\delayedbox=\box24
+\interbox=\box25
+\secondaryindent=\skip27
+\partialpage=\box26
+\doublecolumnhsize=\dimen33
+\savedtopmark=\toks26
+\savedfirstmark=\toks27
+\balancedcolumns=\box27
+ sectioning,
+\unnumberedno=\count38
+\chapno=\count39
+\secno=\count40
+\subsecno=\count41
+\subsubsecno=\count42
+\appendixno=\count43
+\absseclevel=\count44
+\secbase=\count45
+\chapheadingskip=\skip28
+\secheadingskip=\skip29
+\subsecheadingskip=\skip30
+ toc,
+\tocfile=\write0
+\contentsrightmargin=\skip31
+\savepageno=\count46
+\lastnegativepageno=\count47
+\tocindent=\dimen34
+ environments,
+\lispnarrowing=\skip32
+\envskipamount=\skip33
+\circthick=\dimen35
+\cartouter=\dimen36
+\cartinner=\dimen37
+\normbskip=\skip34
+\normpskip=\skip35
+\normlskip=\skip36
+\lskip=\skip37
+\rskip=\skip38
+\nonfillparindent=\dimen38
+\tabw=\dimen39
+\verbbox=\box28
+
+defuns,
+\defbodyindent=\skip39
+\defargsindent=\skip40
+\deflastargmargin=\skip41
+\defunpenalty=\count48
+\parencount=\count49
+\brackcount=\count50
+ macros,
+\savedcatcodeone=\count51
+\savedcatcodetwo=\count52
+\paramno=\count53
+\macname=\toks28
+ cross references,
+\auxfile=\write1
+\savesfregister=\count54
+\toprefbox=\box29
+\printedrefnamebox=\box30
+\infofilenamebox=\box31
+\printedmanualbox=\box32
+ insertions,
+\footnoteno=\count55
+\SAVEfootins=\box33
+\SAVEmargin=\box34
+
+(/usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read1
+\epsfframemargin=\dimen40
+\epsfframethickness=\dimen41
+\epsfrsize=\dimen42
+\epsftmp=\dimen43
+\epsftsize=\dimen44
+\epsfxsize=\dimen45
+\epsfysize=\dimen46
+\pspoints=\dimen47
+)
+\noepsfhelp=\toks29
+ localization,
+\nolanghelp=\toks30
+\countUTFx=\count56
+\countUTFy=\count57
+\countUTFz=\count58
+ formatting,
+\defaultparindent=\dimen48
+ and turning on texinfo input format.)
+texinfo.tex: doing @include of version.texi
+
+
+(/home/richard/debs/flex/flex-2.6.4/doc/version.texi) [1{/var/lib/texmf/fonts/m
+ap/pdftex/updmap/pdftex.map}] [2] (./flex.toc [-1] [-2] [-3] [-4]) [-5]
+(./flex.toc) (./flex.toc) Chapter 1
+\openout0 = `flex.toc'.
+
+ (./flex.aux)
+\openout1 = `flex.aux'.
+
+@cpindfile=@write2
+\openout2 = `flex.cp'.
+
+
+Writing index file flex.cp
+Chapter 2 [1] Chapter 3 [2] Chapter 4 [3] [4] Chapter 5 [5] [6] [7] Chapter 6
+[8] [9] [10] [11] [12] Chapter 7 [13]
+@vrindfile=@write3
+\openout3 = `flex.vr'.
+
+
+Writing index file flex.vr
+Chapter 8 [14] [15] [16] [17] Chapter 9 [18] [19] Chapter 10 [20] [21]
+@fnindfile=@write4
+\openout4 = `flex.fn'.
+
+
+Writing index file flex.fn
+[22] [23] [24] [25] Chapter 11 [26]
+@tpindfile=@write5
+\openout5 = `flex.tp'.
+
+
+Writing index file flex.tp
+[27]
+Overfull \hbox (72.42863pt too wide) in paragraph at lines 2136--2136
+ [][][][][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(0.0+0.0)x45.9895
+.@hbox(0.0+0.0)x45.9895
+.@hbox(0.0+0.0)x45.9895
+.etc.
+
+[28] [29] Chapter 12 [30] Chapter 13 [31]
+@hkindfile=@write6
+\openout6 = `flex.hk'.
+
+
+Writing index file flex.hk
+Chapter 14 [32] Chapter 15 [33] Chapter 16 [34]
+@opindfile=@write7
+\openout7 = `flex.op'.
+
+
+Writing index file flex.op
+[35] [36] [37] [38] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 3051--3058
+ @textrm It in-forms @texttt flex[] @textrm that you have de-rived @texttt NAME
+[] @textrm as a sub-class of
+
+@hbox(7.60416+2.12917)x433.62, glue set 4.45638
+.@glue(@leftskip) 57.81621
+.@textrm I
+.@textrm t
+.@glue 3.65 plus 1.825 minus 1.21666
+.@textrm i
+.etc.
+
+[40] [41] [42] [43] Chapter 17 [44] [45] [46] [47] [48] Chapter 18 [49]
+[50] [51] [52] Chapter 19 [53] [54] [55]
+Overfull \hbox (78.17732pt too wide) in paragraph at lines 4222--4222
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x482.88977
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[56] [57]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 4355--4355
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x471.3924
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[58] [59] Chapter 20 [60] [61] [62] Chapter 21 [63] [64] [65] Chapter 22
+[66] [67] [68] [69] [70] Chapter 23 [71]
+Underfull \hbox (badness 10000) in paragraph at lines 5270--5280
+ []@texttt reject_used_but_not_detected undefined[] @textrm or @texttt yymore_u
+sed_but_not_detected
+
+@hbox(6.69167+2.43333)x433.62, glue set 4.81107
+.@glue(@leftskip) 21.68121
+.@hbox(4.86667+0.0)x0.0, glue set - 12.70244fil
+..@glue 0.0 plus 1.0fil minus 1.0fil
+..@mathon
+..@textsy ^^O
+..@mathoff
+..@kern 7.22743
+.@texttt r
+.@texttt e
+.@texttt j
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5308--5313
+ []@textrm `@texttt input buffer overflow, can't enlarge buffer because scanner
+ uses REJECT[]@textrm '[].
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 21.68121
+.@hbox(4.86667+0.0)x0.0, glue set - 12.70244fil
+..@glue 0.0 plus 1.0fil minus 1.0fil
+..@mathon
+..@textsy ^^O
+..@mathoff
+..@kern 7.22743
+.@textrm `
+.@texttt i
+.@texttt n
+.etc.
+
+Chapter 24 [72] [73] Chapter 25 [74] (FAQ) [75] [76] [77] [78] [79] [80]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 5904--5904
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x442.64896
+..@texttt #
+..@texttt d
+..@texttt e
+..@texttt f
+..@texttt i
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[81] [82] [83]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6074--6074
+ [][][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(1.36874+0.0)x45.9895
+..@texttt .
+.@hbox(7.60416+2.43333)x379.41339
+..@texttt p
+..@texttt r
+..@texttt i
+..@texttt n
+..@texttt t
+..etc.
+.@penalty 10000
+.etc.
+
+[84]
+Overfull \hbox (129.91551pt too wide) in paragraph at lines 6140--6140
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x534.62796
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[85]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6240--6240
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x436.90027
+..@texttt t
+..@texttt h
+..@texttt e
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6240--6240
+ [][] |
+
+@hbox(6.69167+1.52081)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+1.52081)x431.15158
+..@texttt w
+..@texttt a
+..@texttt s
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x419.6542
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt T
+..@texttt h
+..@texttt e
+..@texttt s
+..@texttt e
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x425.4029
+..@texttt c
+..@texttt a
+..@texttt u
+..@texttt s
+..@texttt e
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x425.4029
+..@texttt m
+..@texttt i
+..@texttt n
+..@texttt o
+..@texttt r
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[86]
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x448.39764
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x448.39764
+..@texttt I
+..@penalty 10000
+..@glue 5.74869
+..@texttt c
+..@texttt a
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x431.15158
+..@texttt o
+..@texttt r
+..@penalty 10000
+..@glue 5.74869
+..@texttt f
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (55.18257pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x459.89502
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt T
+..@texttt h
+..@texttt e
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x425.4029
+..@texttt o
+..@texttt f
+..@penalty 10000
+..@glue 5.74869
+..@texttt t
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x442.64896
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6318--6318
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt A
+..@texttt c
+..@texttt t
+..@texttt u
+..@texttt a
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[87]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6371--6371
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x425.4029
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt I
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6371--6371
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x431.15158
+..@texttt T
+..@texttt o
+..@penalty 10000
+..@glue 5.74869
+..@texttt i
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6371--6371
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x442.64896
+..@texttt #
+..@texttt d
+..@texttt e
+..@texttt f
+..@texttt i
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[88]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x431.15158
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x436.90027
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt s
+..@texttt o
+..@penalty 10000
+..@glue 5.74869
+..@texttt i
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6410--6410
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x425.4029
+..@texttt h
+..@texttt a
+..@texttt v
+..@texttt e
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6437--6437
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x431.15158
+..@texttt f
+..@texttt i
+..@texttt x
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[89]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6437--6437
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt B
+..@texttt u
+..@texttt t
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x442.64896
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt I
+..@texttt '
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x436.90027
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt w
+..@texttt o
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x425.4029
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt H
+..@texttt e
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x442.64896
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt H
+..@texttt o
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x436.90027
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt a
+..@texttt b
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt s
+..@texttt c
+..@texttt a
+..@texttt n
+..@texttt n
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt T
+..@texttt h
+..@texttt e
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt s
+..@texttt t
+..@texttt a
+..@texttt t
+..@texttt e
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6493--6493
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x419.6542
+..@texttt n
+..@texttt e
+..@texttt x
+..@texttt t
+..@texttt /
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[90]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x425.4029
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt "
+..@texttt u
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x425.4029
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt a
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x436.90027
+..@texttt Y
+..@texttt o
+..@texttt u
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6524--6524
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt T
+..@texttt h
+..@texttt e
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x431.15158
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt I
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[91]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x425.4029
+..@texttt a
+..@texttt n
+..@texttt y
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x419.6542
+..@texttt t
+..@texttt h
+..@texttt e
+..@texttt n
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6565--6565
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt T
+..@texttt h
+..@texttt e
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x471.3924
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt f
+..@texttt l
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x436.90027
+..@texttt a
+..@texttt l
+..@texttt l
+..@texttt o
+..@texttt w
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt p
+..@texttt a
+..@texttt r
+..@texttt e
+..@texttt n
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6591--6591
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt o
+..@texttt p
+..@texttt t
+..@texttt i
+..@texttt o
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[92]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6628--6628
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x431.15158
+..@texttt b
+..@texttt e
+..@texttt h
+..@texttt a
+..@texttt v
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[93]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6700--6700
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt T
+..@texttt h
+..@texttt e
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[94]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6726--6726
+ [][] |
+
+@hbox(7.60416+1.52081)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+1.52081)x419.6542
+..@texttt w
+..@texttt o
+..@texttt r
+..@texttt k
+..@texttt ,
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x425.4029
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt W
+..@texttt e
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x425.4029
+..@texttt I
+..@penalty 10000
+..@glue 5.74869
+..@texttt s
+..@texttt t
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt a
+..@texttt n
+..@texttt d
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6755--6755
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x425.4029
+..@texttt T
+..@texttt h
+..@texttt a
+..@texttt t
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[95]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6785--6785
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x436.90027
+..@texttt v
+..@texttt a
+..@texttt r
+..@texttt i
+..@texttt a
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6822--6822
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x425.4029
+..@texttt H
+..@texttt o
+..@texttt w
+..@texttt e
+..@texttt v
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6822--6822
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt l
+..@texttt e
+..@texttt x
+..@texttt e
+..@texttt r
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6822--6822
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x431.15158
+..@texttt e
+..@texttt m
+..@texttt b
+..@texttt e
+..@texttt d
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[96]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6855--6855
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt W
+..@texttt h
+..@texttt a
+..@texttt t
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6855--6855
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt N
+..@texttt o
+..@texttt t
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 6855--6855
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x425.4029
+..@texttt a
+..@texttt n
+..@penalty 10000
+..@glue 5.74869
+..@texttt a
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[97]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6920--6920
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x442.64896
+..@texttt #
+..@texttt d
+..@texttt e
+..@texttt f
+..@texttt i
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (49.43388pt too wide) in paragraph at lines 6920--6920
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x454.14633
+..@texttt a
+..@texttt n
+..@texttt d
+..@texttt ,
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[98]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt T
+..@texttt h
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt Y
+..@texttt o
+..@texttt u
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 6953--6953
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x442.64896
+..@texttt T
+..@texttt h
+..@texttt e
+..@texttt n
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 6983--6983
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x436.90027
+..@texttt U
+..@texttt s
+..@texttt i
+..@texttt n
+..@texttt g
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 6983--6983
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt A
+..@texttt s
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[99]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 7010--7010
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x471.3924
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt /
+..@texttt u
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7010--7010
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x425.4029
+..@texttt T
+..@texttt h
+..@texttt i
+..@texttt s
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7041--7041
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x425.4029
+..@texttt y
+..@texttt o
+..@texttt u
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[100]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt T
+..@texttt h
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x431.15158
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt s
+..@texttt e
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7067--7067
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x442.64896
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt w
+..@texttt o
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7095--7095
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt i
+..@texttt s
+..@penalty 10000
+..@glue 5.74869
+..@texttt a
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[101]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7118--7118
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x442.64896
+..@texttt T
+..@texttt h
+..@texttt e
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[102]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7235--7235
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt w
+..@texttt h
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[103]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7264--7264
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt p
+..@texttt r
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[104]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x436.90027
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt T
+..@texttt o
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x431.15158
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt (
+..@texttt y
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt F
+..@texttt l
+..@texttt e
+..@texttt x
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x419.6542
+..@texttt y
+..@texttt o
+..@texttt u
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[105]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7349--7349
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x425.4029
+..@texttt o
+..@texttt v
+..@texttt e
+..@texttt r
+..@texttt f
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7382--7382
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt y
+..@texttt y
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7382--7382
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x436.90027
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt H
+..@texttt o
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt p
+..@texttt e
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7430--7430
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x425.4029
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt I
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[106]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt a
+..@texttt r
+..@texttt c
+..@texttt h
+..@texttt i
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7430--7430
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt S
+..@texttt h
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[107]
+Overfull \hbox (101.17207pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+@hbox(7.60416+0.91246)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+0.91246)x505.88452
+..@texttt R
+..@texttt e
+..@texttt c
+..@texttt e
+..@texttt i
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7518--7518
+ [][][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(0.0+0.0)x45.9895
+.@hbox(7.60416+2.43333)x385.16208
+..@texttt b
+..@texttt y
+..@penalty 10000
+..@glue 5.74869
+..@texttt d
+..etc.
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (423.09859pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x827.81104
+..@texttt R
+..@texttt e
+..@texttt c
+..@texttt e
+..@texttt i
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (1779.7889pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x2184.50134
+..@texttt A
+..@texttt U
+..@texttt T
+..@texttt H
+..@texttt O
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[108]
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x436.90027
+..@texttt e
+..@texttt s
+..@texttt c
+..@texttt a
+..@texttt p
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x436.90027
+..@texttt G
+..@texttt e
+..@texttt o
+..@texttt r
+..@texttt g
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7518--7518
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x436.90027
+..@texttt I
+..@texttt n
+..@texttt s
+..@texttt t
+..@texttt i
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 7547--7547
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x436.90027
+..@texttt y
+..@texttt o
+..@texttt u
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[109]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7594--7594
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x419.6542
+..@texttt i
+..@texttt n
+..@texttt t
+..@texttt e
+..@texttt r
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 7621--7621
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x419.6542
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt t
+..@texttt r
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[110] [111]
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7688--7688
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x425.4029
+..@texttt Y
+..@texttt o
+..@texttt u
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7688--7688
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt f
+..@texttt r
+..@texttt o
+..@texttt m
+..@texttt .
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7709--7709
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x442.64896
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt I
+..@texttt n
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[112]
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7773--7773
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x431.15158
+..@texttt i
+..@texttt t
+..@penalty 10000
+..@glue 5.74869
+..@texttt e
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7842--7842
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x442.64896
+..@texttt R
+..@texttt e
+..@texttt c
+..@texttt e
+..@texttt i
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (60.93126pt too wide) in paragraph at lines 7842--7842
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x465.6437
+..@texttt R
+..@texttt e
+..@texttt c
+..@texttt e
+..@texttt i
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[113] [114]
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x448.39764
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt I
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (43.6852pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x448.39764
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt l
+..@texttt a
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x442.64896
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt a
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (20.69044pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x425.4029
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt e
+..@texttt g
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x431.15158
+..@texttt Y
+..@texttt o
+..@texttt u
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 7887--7887
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x442.64896
+..@texttt a
+..@texttt n
+..@texttt d
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[115] [116]
+Overfull \hbox (66.67995pt too wide) in paragraph at lines 8015--8015
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x471.3924
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt I
+..@penalty 10000
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (49.43388pt too wide) in paragraph at lines 8015--8015
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x454.14633
+..@texttt T
+..@texttt h
+..@texttt e
+..@penalty 10000
+..@glue 5.74869
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[117]
+Overfull \hbox (37.93651pt too wide) in paragraph at lines 8015--8015
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x442.64896
+..@texttt c
+..@texttt l
+..@texttt a
+..@texttt s
+..@texttt s
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (26.43913pt too wide) in paragraph at lines 8068--8068
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x431.15158
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt f
+..@texttt o
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (32.18782pt too wide) in paragraph at lines 8068--8068
+ [][] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(6.69167+2.43333)x436.90027
+..@texttt >
+..@penalty 10000
+..@glue 5.74869
+..@texttt A
+..@texttt l
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[118]
+Overfull \hbox (14.94176pt too wide) in paragraph at lines 8091--8091
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x419.6542
+..@texttt a
+..@texttt l
+..@texttt l
+..@texttt o
+..@texttt w
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[119] Appendix A [120] [121] [122] [123]
+Overfull \hbox (15.10698pt too wide) in paragraph at lines 8454--8454
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 57.81621
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x390.91077
+..@penalty 10000
+..@glue 5.74869
+..@texttt {
+..@texttt d
+..@texttt f
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (95.58861pt too wide) in paragraph at lines 8454--8454
+ [][] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 57.81621
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+2.43333)x471.3924
+..@penalty 10000
+..@glue 5.74869
+..@texttt {
+..@texttt h
+..@texttt f
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+[124]
+Overfull \hbox (934.89702pt too wide) in paragraph at lines 8479--8479
+ [][] |
+
+@hbox(7.60416+0.91246)x433.62
+.@glue(@leftskip) 57.81621
+.@hbox(0.0+0.0)x0.0
+.@hbox(7.60416+0.91246)x1310.7008
+..@texttt [
+..@texttt \
+..@texttt x
+..@texttt 0
+..@texttt 9
+..etc.
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.etc.
+
+
+Overfull \hbox (337.0335pt too wide) in paragraph at lines 8488--8489
+ []@texttt L?\"([^\"\\\n]|(\\['\"?\\abfnrtv])|(\\([0123456]{1,3}))|(\\x[[:xdigi
+t:]]+)|(\\u([[:xdigit:]]{4}))|(\\U([[:xdigit:]]{8})))*\"[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 57.81621
+.@hbox(0.0+0.0)x0.0
+.@texttt L
+.@texttt ?
+.@texttt \
+.etc.
+
+[125] (Indices) [126] [127] [128] [129] [130] [131] [132] [133] ) 
+Here is how much of TeX's memory you used:
+ 4415 strings out of 497100
+ 62302 string characters out of 6206941
+ 102861 words of memory out of 5000000
+ 5147 multiletter control sequences out of 15000+600000
+ 34384 words of font info for 120 fonts, out of 8000000 for 9000
+ 52 hyphenation exceptions out of 8191
+ 15i,6n,16p,426b,655s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning
+ (\pdffontattr): fonts @textsl and @defsl have conflicting attributes; I will i
+gnore the attributes assigned to @textsl
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsltt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+s10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on flex.pdf (140 pages, 557361 bytes).
+PDF statistics:
+ 2263 PDF objects out of 2487 (max. 8388607)
+ 2080 compressed objects within 21 object streams
+ 359 named destinations out of 1000 (max. 500000)
+ 1389 words of extra memory for PDF output out of 10000 (max. 10000000)
+

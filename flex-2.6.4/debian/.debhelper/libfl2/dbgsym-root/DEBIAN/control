@@ -1,0 +1,13 @@
+Package: libfl2-dbgsym
+Source: flex
+Version: 2.6.4-6.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Manoj Srivastava <srivasta@debian.org>
+Installed-Size: 19
+Depends: libfl2 (= 2.6.4-6.2)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libfl2
+Build-Ids: 03b172a4b187ef7cc0ae30e1a0d8f010670bbaea
